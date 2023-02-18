@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All about NASA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="./images/logo.png" alt="" /></a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>BLOG</h1>
+    </section>
+
+    <main>
+      <section class="blog-content">
+        <div class="row">
+          <div class="blog-left">
+            <img src="./images/planet1.jpg" alt="" />
+            <h2>Planets</h2>
+            <p>Mercury</p>
+            <br />
+            <p>Venus</p>
+            <br />
+            <p>Earth</p>
+            <br />
+            <p>Mars</p>
+            <br />
+            <p>Jupiter</p>
+            <br />
+            <p>Saturn</p>
+            <br />
+            <p>Uranus</p>
+            <br />
+            <p>Neptune</p>
+
+            <div class="comment-box">
+              <h3>Leave a comment</h3>
+              <form class="comment-form">
+                <input type="text" placeholder="Enter name" />
+                <input type="text " placeholder="Enter email" />
+                <textarea rows="5" placeholder="Your comment"></textarea>
+                <button type="submit " class="btn red-btn">Post comment</button>
+              </form>
+            </div>
+          </div>
+    
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Mercury</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Venus</span>
+                <span>2</span>
+            </div>
+            <div>
+                <span>Earth</span>
+                <span>3</span>
+            </div>
+            <div>
+                <span>Mars</span>
+                <span>4</span>
+            </div>
+            <div>
+                <span>Jupiter</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Saturn</span>
+                <span>6</span>
+            </div>
+            <div>
+                <span>Uranus</span>
+                <span>7</span>
+            </div>
+            <div>
+                <span>Neptune</span>
+                <span>8</span>
+            </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h4>ABOUT US</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quasi,
+        illo laborum illum at omnis ipsum deserunt atque perferendis numquam,
+        consequuntur suscipit consectetur debitis, libero repudiandae error.
+        Cumque, iure? Odio.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </footer>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-255px";
+      }
+    </script>
+  </body>
+</html>
